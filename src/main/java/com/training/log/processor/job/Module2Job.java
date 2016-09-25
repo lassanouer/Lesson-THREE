@@ -21,6 +21,11 @@ import com.training.log.processor.utils.LogParser;
 
 import scala.Tuple2;
 
+/**
+ * 
+ * @author Anouer Lassoued
+ *
+ */
 public class Module2Job {
 
 	private static Logger sLogger = LoggerFactory.getLogger(Module2Job.class);
@@ -58,7 +63,7 @@ public class Module2Job {
 	 * 
 	 * @param iSession_1
 	 * @param iSession_2
-	 * @return null si les sessions sont indépendantes sinon une session qui les
+	 * @return null si les sessions sont indÃ©pendantes sinon une session qui les
 	 *         combines
 	 */
 	public static SessionLogDTO reduceByIpAndDay(SessionLogDTO iSession_1, SessionLogDTO iSession_2) {
