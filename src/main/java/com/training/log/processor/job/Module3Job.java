@@ -1,11 +1,9 @@
 package com.training.log.processor.job;
 
 import java.io.File;
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.time.DateUtils;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -21,6 +19,11 @@ import com.training.log.processor.utils.LogParser;
 
 import scala.Tuple2;
 
+/**
+ * 
+ * @author Anouer Lassoued
+ *
+ */
 public class Module3Job {
 
 	private static Logger sLogger = LoggerFactory.getLogger(Module2Job.class);
@@ -54,7 +57,7 @@ public class Module3Job {
 	 * 
 	 * @param iSession_1
 	 * @param iSession_2
-	 * @return null si les sessions sont indépendante sinon une session qui les
+	 * @return null si les sessions sont indÃ©pendante sinon une session qui les
 	 *         combines
 	 */
 	public static SessionLogDTO reduceByTimeout(SessionLogDTO iSession_1, SessionLogDTO iSession_2) {
