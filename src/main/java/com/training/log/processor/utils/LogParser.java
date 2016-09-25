@@ -13,6 +13,11 @@ import java.util.regex.Pattern;
 import com.training.log.processor.commons.Constants;
 import com.training.log.processor.dto.SessionLogDTO;
 
+/**
+ * 
+ * @author Anouer Lassoued
+ *
+ */
 public class LogParser {
 
 	private static final Pattern PATTERN = Pattern.compile(Constants.slog_entry_pattern);
@@ -32,7 +37,7 @@ public class LogParser {
 				System.out.println(BundelUtils.get("debug.error.parse"));
 			}
 
-			// La Ligne est toujours composés de:
+			// La Ligne est toujours composÃ©s de:
 			// 1:IP 2:client 3:user 4:date time 5:method 6:req 7:proto
 			// 8:respcode
 			// 9:size
@@ -41,7 +46,7 @@ public class LogParser {
 					lFormat.parse(lMatcher.group(Constants.sQuatr) + " " + lMatcher.group(Constants.sCinq)),
 					lMatcher.group(Constants.sSis), lMatcher.group(Constants.sSept));
 		} catch (ParseException e) {
-			System.out.println("ip non trouv�e");
+			System.out.println("ip non trouvée");
 			return null;
 		}
 	}
