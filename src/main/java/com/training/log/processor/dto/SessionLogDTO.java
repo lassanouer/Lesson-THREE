@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 
+ * @author Anouer Lassoued
+ *
+ */
 public class SessionLogDTO implements Serializable {
 
 	private static final long serialVersionUID = -2802823882278050893L;
